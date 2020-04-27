@@ -3,13 +3,13 @@ using namespace std;
 
 struct Node {
     static const Node kDefaultNode;
-    int64_t val;
+    int64_t val;  // data
     void Merge(Node& lhs, Node& rhs) {
-        val = lhs.val + rhs.val;
+        val = lhs.val + rhs.val;   // function implementation
     }
 };
 
-const Node Node::kDefaultNode{0};
+const Node Node::kDefaultNode{0};  // default value
 
 struct SegTree {
     int sz;
